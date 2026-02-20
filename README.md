@@ -47,7 +47,7 @@ Objective
 
 Tone
 
-CTA
+CTA(Call To Action)
 
 Scene breakdown
 
