@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-surface text-gray-100 font-sans antialiased;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-600 hover:bg-brand-500 text-white font-semibold px-5 py-2.5 rounded-xl
+           transition-all duration-200 shadow-lg shadow-brand-900/30 active:scale-95
+           disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2
+           focus:ring-brand-400 focus:ring-offset-2 focus:ring-offset-surface;
+  }
+  .btn-secondary {
+    @apply bg-surface-hover hover:bg-surface-border text-gray-200 font-medium px-5 py-2.5
+           rounded-xl border border-surface-border transition-all duration-200 active:scale-95
+           disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none;
+  }
+  .btn-ghost {
+    @apply text-gray-400 hover:text-white hover:bg-surface-hover px-3 py-2 rounded-lg
+           transition-all duration-150 text-sm;
+  }
+  .card {
+    @apply bg-surface-card border border-surface-border rounded-2xl p-6 shadow-xl
+           shadow-black/20;
+  }
+  .input {
+    @apply w-full bg-surface border border-surface-border text-gray-100 placeholder-gray-500
+           rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500
+           focus:border-transparent transition-all duration-200;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-instagram {
+    @apply bg-pink-500/15 text-pink-400 border border-pink-500/20;
+  }
+  .badge-facebook {
+    @apply bg-blue-500/15 text-blue-400 border border-blue-500/20;
+  }
+  .badge-youtube {
+    @apply bg-red-500/15 text-red-400 border border-red-500/20;
+  }
+  .label {
+    @apply block text-sm font-medium text-gray-300 mb-1.5;
+  }
+  .select {
+    @apply w-full bg-surface border border-surface-border text-gray-100 rounded-xl px-4 py-3
+           text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent
+           cursor-pointer transition-all duration-200;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { @apply bg-surface-border rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-brand-700; }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gradient background for login */
+.animated-bg {
+  background: linear-gradient(-45deg, #0f0f1a, #1a0a2e, #0a1628, #1a0f2e);
+  background-size: 400% 400%;
+  animation: gradient-x 8s ease infinite;
+}
+
+/* Glow effects */
+.glow-brand {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+}
