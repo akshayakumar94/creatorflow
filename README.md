@@ -174,6 +174,15 @@ Developed media preview system
 
 Organized asset storage
 
+🚀 Phase 5- Additional Features:
+
+Edit my Video - Users upload their unedited video by using Moviepy2.0 the engine programmatically cuts and export the final video without manual intervention. We also integrate Gemini 2.0 Flash to watch the video, identify the most engaging highlights, and extract a perfect <20s clip alongside the captions of the video.
+
+Rate my content - Users upload their recent social media post alonto magside its url and the engine evalutes the post based on the reach and also suggests what all can be done 
+to make the post more engaging.
+
+Activate Pro Plan- Enables the users to upgrade themselves Pro Plan- a much upgraded engine which makes uses of the premium versions of the APIs wherein they have access to high quality content and more reach capable suggestions.
+
 ✨ Key Features
 
 ✔ Multi-day AI strategy planning
